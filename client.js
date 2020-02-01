@@ -1,6 +1,6 @@
 const net = require('net')
 
-const port = process.argv[2]
+const port = process.argv[2] || process.env.PORT || 3000
 
 const client = net.createConnection({
 	port,
